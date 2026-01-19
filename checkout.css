@@ -1,0 +1,92 @@
+:root {
+    --dark-red: #8b0000;
+    --red: #c0392b;
+    --yellow: #f1c40f;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: Arial, sans-serif;
+}
+
+/* Container for spacing */
+.checkout-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Card styling */
+.card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    color: var(--dark-red);
+}
+
+/* Input fields */
+.form-control {
+    border-radius: 50px;
+    border: 1px solid var(--red);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #e1b800;
+}
+
+/* Buttons */
+.btn-main {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background-color: #e1b800; /* darker yellow on hover */
+    color: var(--dark-red);
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+/* Dropdown select */
+.select-table {
+    border-radius: 50px;
+    border: 1px solid var(--red);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: var(--dark-red);
+    width: 100%;
+}

@@ -1,0 +1,252 @@
+:root {
+    --dark-red: #8b0000;
+    --red: #c0392b;
+    --white: #ffffff;
+    --yellow: #f1c40f;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-red);
+    height: 70px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--white) !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: var(--yellow);
+    color: var(--dark-red) !important;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Toggle mode button */
+#toggleTheme {
+    background-color: var(--white);
+    color: var(--dark-red);
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    transition: all 0.3s ease;
+}
+
+#toggleTheme:hover {
+    background-color: #f1c40f;
+    color: var(--dark-red);
+}
+
+/* Filter buttons */
+.category-btn {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 0 0.2rem 0.5rem 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #e1b800;
+    color: var(--dark-red);
+}
+
+/* Banner Carousel Wrapper */
+.carousel-wrapper {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Rounded banner with responsive height */
+#menuCarousel {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px; /* Increased height */
+    max-height: 60vh; /* Ensures it scales on smaller screens */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Make carousel items take full height */
+#menuCarousel .carousel-inner,
+#menuCarousel .carousel-item {
+    height: 100%;
+}
+
+/* Banner image settings */
+#menuCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+/* Quantity, card, navbar, footer styles are same as previous */
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.btn-main {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 999px;
+}
+
+.btn-main:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+/* INLINE QUANTITY CONTROL */
+.qty-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.qty-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background-color: var(--dark-red);
+}
+
+.qty-input {
+    width: 50px;
+    text-align: center;
+    border-radius: 999px;
+    border: 1px solid var(--red);
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn-main {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #e1b800;
+    color: var(--dark-red);
+}
+
+/* Quantity buttons inline */
+.qty-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.qty-input {
+    width: 60px;
+    text-align: center;
+}
+
+.qty-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+    background-color: var(--dark-red);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] {
+    --dark-red: #4b0000;
+    --red: #8b0000;
+    --white: #f8f9fa;
+    --yellow: #f1c40f;
+    --light-gray: #222;
+    background-color: var(--light-gray);
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: var(--dark-red);
+}
+
+[data-bs-theme="dark"] .navbar .nav-link,
+[data-bs-theme="dark"] .navbar .navbar-brand {
+    color: var(--white) !important;
+}
+
+[data-bs-theme="dark"] #toggleTheme {
+    background-color: #333;
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] #toggleTheme:hover {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+}
+
+[data-bs-theme="dark"] .card-title {
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #333;
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] .qty-input {
+    background-color: #444;
+    color: var(--white);
+}
