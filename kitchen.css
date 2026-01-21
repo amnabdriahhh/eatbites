@@ -1,0 +1,142 @@
+/* ================= THEME COLORS (SAME AS homepage.css) ================= */
+:root {
+    --dark-red: #8b0000;
+    --red: #c0392b;
+    --white: #ffffff;
+    --yellow: #f1c40f;
+    --light-gray: #f8f9fa;
+}
+
+/* ================= BODY ================= */
+.kitchen-body {
+    background-color: var(--light-gray);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: var(--dark-red);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    color: var(--white) !important;
+}
+
+.navbar .btn-warning {
+    background-color: var(--yellow);
+    border: none;
+    color: var(--dark-red);
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+#toggleTheme {
+    background-color: var(--white);
+    color: var(--dark-red);
+    border-radius: 50px;
+    border: none;
+    padding: 0.4rem 0.7rem;
+    font-weight: 600;
+}
+
+/* ================= HERO ================= */
+.kitchen-hero {
+    padding: 4rem 1rem;
+    background: linear-gradient(
+        rgba(139,0,0,0.85),
+        rgba(139,0,0,0.85)
+    ), url('images/kitchen-bg.jpg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+}
+
+.kitchen-hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.kitchen-hero p {
+    opacity: 0.9;
+}
+
+/* ================= FILTER FORM ================= */
+.form-control,
+.form-select {
+    border-radius: 50px;
+    padding: 0.6rem 1rem;
+}
+
+.btn-danger {
+    background-color: var(--dark-red);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+}
+
+.btn-secondary {
+    border-radius: 50px;
+}
+
+/* ================= ORDER CARDS ================= */
+.kitchen-card {
+    border-radius: 1rem;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kitchen-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.kitchen-card h5 {
+    color: var(--dark-red);
+}
+
+.status-badge {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 50px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: var(--dark-red);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* ================= DARK MODE (MATCH homepage.css) ================= */
+[data-bs-theme="dark"] {
+    --dark-red: #4b0000;
+    --red: #8b0000;
+    --white: #f8f9fa;
+    --yellow: #f1c40f;
+    --light-gray: #222;
+    background-color: var(--light-gray);
+}
+
+[data-bs-theme="dark"] .kitchen-card {
+    background-color: #333;
+    color: var(--white);
+}
+
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+    background-color: #222;
+    color: var(--white);
+    border: 1px solid #555;
+}
+
+[data-bs-theme="dark"] .navbar,
+[data-bs-theme="dark"] .footer {
+    background-color: var(--dark-red);
+}
