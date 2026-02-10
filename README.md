@@ -80,8 +80,8 @@ The following pre-configured accounts are available for testing. All passwords a
 
 | Role    | Email Address      | Password  | Purpose                                          |
 |---------|-------------------|-----------|--------------------------------------------------|
-| Admin   | amna@gmail.com    | amna123   | Test admin dashboard and management features     |
-| Kitchen | amalin@gmail.com  | amalin123 | Test order processing and item status management |
+| Admin   | admin@gmail.com   | admin     | Test admin dashboard and management features     |
+| Kitchen | kitchen@gmail.com | kitchen   | Test order processing and item status management |
 
 ### Optional: Quick Demo Setup
 To create standardized demo accounts with password `123456`, navigate to:
